@@ -1,17 +1,22 @@
 {
   "name": "snakecase-keys",
   "main": "index.js",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Convert an object's keys to snake case",
   "license": "MIT",
   "repository": "bendrucker/snakecase-keys",
+  "contributors": [
+    {
+      "name": "Mikey Stengel"
+    }
+  ],
   "author": {
     "name": "Ben Drucker",
     "email": "bvdrucker@gmail.com",
     "url": "bendrucker.me"
   },
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "tape test.js"
   },
   "keywords": [
     "snake",
@@ -21,15 +26,13 @@
     "object"
   ],
   "devDependencies": {
-    "tape": "^4.0.0",
-    "standard": "^11.0.1"
+    "tape": "^4.0.0"
   },
   "files": [
     "index.js"
   ],
   "dependencies": {
-    "map-obj": "~3.0.0",
-    "to-snake-case": "~1.0.0"
+    "map-obj": "~3.0.0"
   },
   "engines": {
     "node": ">=6"
