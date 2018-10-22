@@ -1,19 +1,18 @@
 {
-  "name": "snakecase-keys",
+  "name": "snake-keys",
   "main": "index.js",
   "version": "3.0.0",
   "description": "Convert an object's keys to snake case",
   "license": "MIT",
-  "repository": "bendrucker/snakecase-keys",
+  "repository": "snake-keys",
   "contributors": [
     {
       "name": "Mikey Stengel"
     }
   ],
   "author": {
-    "name": "Ben Drucker",
-    "email": "bvdrucker@gmail.com",
-    "url": "bendrucker.me"
+    "name": "Mikey Stengel",
+    "email": "mikey.stengel96@gmail.com"
   },
   "scripts": {
     "test": "tape test.js"
