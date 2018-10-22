@@ -8,7 +8,6 @@ module.exports = function(obj, options = { deep: true }) {
     (key, val) => {
       // respects whole words being uppercase e.g turns clientID into client_id
       // instead of client_i_d. See https://stackoverflow.com/a/30521308.
-      console.log("Key that needs to be snake cased: " + key);
       let snakeCasedKey = key
         .replace(/\.?([A-Z]+)/g, (x, y) => {
           return "_" + y.toLowerCase();
