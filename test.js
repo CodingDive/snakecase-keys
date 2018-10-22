@@ -19,6 +19,25 @@ test("Respects whole words", t => {
   t.end();
 });
 
+test("Respects UPPER_CASE constant format", t => {
+  t.deepEqual(Snake({ FOO_BAR: "bazBAR", nested: { FOO_BAR: "bazID" } }), {
+    foo_bar: "bazBAR",
+    nested: { foo_bar: "bazID" }
+  });
+  t.end();
+});
+
+test("Respects UPPER_CASE constant format of long constant names", t => {
+  t.deepEqual(
+    Snake({ FOO_BAR_BAZ_QUX: "bazBAR", nested: { FOO_BAR_BAZ_QUX: "bazID" } }),
+    {
+      foo_bar_baz_qux: "bazBAR",
+      nested: { foo_bar_baz_qux: "bazID" }
+    }
+  );
+  t.end();
+});
+
 test("Doesn't add an underscore before a number", t => {
   t.deepEqual(Snake({ fooBar1: "bazBar1", nested: { fooBar1: "bazId1" } }), {
     foo_bar1: "bazBar1",
